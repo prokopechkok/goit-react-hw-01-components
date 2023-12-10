@@ -1,59 +1,57 @@
-.profile {
+import styled from '@emotion/styled';
+
+export const Card = styled.div`
   display: flex;
   flex-direction: column;
   width: 250px;
   height: auto;
-  /* padding: 10px; */
   margin-top: 20px;
   margin-left: 20px;
   margin-bottom: 20px;
   align-items: center;
-  border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-}
-.description {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+`;
+export const Description = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   padding: 30px;
-}
-.avatar {
+`;
+export const Avatar = styled.img`
   width: 120px;
   height: 120px;
   margin-bottom: 20px;
   border-radius: 50%;
   background-color: lightcyan;
-}
-.name {
+`;
+export const Name = styled.p`
   font-size: 25px;
   color: rgba(0, 0, 0, 0.8);
   font-weight: bold;
   margin-bottom: 20px;
-}
-.tag {
+`;
+export const Tag = styled.p`
   font-size: 15px;
   font-weight: 500;
   opacity: 0.5;
   margin-bottom: 15px;
-}
-.location {
+`;
+export const Location = styled.p`
   font-size: 15px;
   font-weight: 500;
   opacity: 0.5;
-}
-.stats {
+`;
+export const StatsBlock = styled.ul`
   display: flex;
   flex-direction: row;
   width: 100%;
   margin: 0;
-  /* gap: 0; */
-  list-style: none;
   justify-content: space-between;
   align-items: center;
-}
-.stats li {
+`;
+export const StatsItem = styled.li`
   display: flex;
   flex-direction: column;
   flex-basis: calc(100% / 3);
@@ -62,21 +60,19 @@
   align-items: center;
   justify-content: center;
   background-color: lightcyan;
-  border-top: 2px solid rgba(0, 0, 0, 0.2);
-}
-.stats li:nth-child(2) {
-  /* border-top: none; */
-  border-left: 2px solid rgba(0, 0, 0, 0.2);
-  border-right: 2px solid rgba(0, 0, 0, 0.2);
-}
-.label {
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  &:nth-child(2) {
+    border-left: 2px solid rgba(0, 0, 0, 0.1);
+    border-right: 2px solid rgba(0, 0, 0, 0.1);
+  }
+`;
+export const Label = styled.p`
   font-size: 13px;
   font-weight: 500;
   opacity: 0.5;
-}
-.quantity {
+`;
+export const Quantity = styled.span`
   color: rgba(0, 0, 0, 0.8);
-
   font-size: 20px;
   font-weight: bold;
-}
+`;
